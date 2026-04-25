@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install --omit=dev
 COPY src/ ./src/
-
+ 
 # Stage 2: Runner  
 FROM node:20-alpine AS runner
 RUN addgroup -S pgapp && adduser -S pgapp -G pgapp
