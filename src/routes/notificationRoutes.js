@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {
-  createNotification,
+  createNotification, 
   getNotificationsByTenant,
   getUnreadCount,
   markAsRead,
